@@ -1,5 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## function makeCacheMatrix takes a matris as input
+## and returns a list of four functions
+## setmatrix: sets the element of the list as matrix
+## getmatrix: gets the matrix parameter
+## getinverse: computes the inverse using solve
+## setinverse: sets the computed value of inverse matrix
+
 
 ## Write a short comment describing this function
 makeCacheMatrix <- function(x = matrix()) 
@@ -20,7 +25,9 @@ makeCacheMatrix <- function(x = matrix())
 }
 
 
-## Write a short comment describing this function
+## function cacheSolve applies the core formula for matrix inversion
+## after checking if the inverse has been previously computed or not
+## if computed previously, it returns the cached value
 
 cacheSolve <- function(x, ...) 
 {
